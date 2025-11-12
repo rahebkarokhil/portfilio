@@ -4,18 +4,18 @@
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import rahebImg from "/About/raheb p.jpg"; // put the image in /public/About/rahebb.png
+import rahebImg from "/About/raheb p.jpg"; 
 
 function About() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
-  });
+  }); 
 
   return (
     <section id="about" className="bg-black py-12 sm:py-16">
-      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-center">
+      <div className="mx-auto w-full max-w-[1200px]   ">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center px-44 lg:px-10">
           <div className="rounded-2xl bg-black text-white shadow-inner border border-slate-700 shadow-slate-700 px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
             <h1 className="text-yellow-600 font-bold font-poppins text-3xl sm:text-4xl mb-4 sm:mb-5 lg:mt-6">
               About Me
@@ -69,11 +69,11 @@ function About() {
           </div>
 
           {/* Right: Image */}
-          <div className="w-full md:h-[560px] lg:h-[690px] rounded-2xl overflow-hidden shadow-inner border border-slate-700 shadow-slate-700 bg-black">
+          <div className="w-full h-[100%] rounded-2xl overflow-hidden shadow-inner border border-slate-700 shadow-slate-700 bg-black">
             <img
               src={rahebImg}
               alt="Raheb portrait"
-              className="w-[100%] h-auto  object-cover"
+              className="w-[100%] h-[100%]  "
               loading="lazy"
               decoding="async"
             />

@@ -29,7 +29,7 @@ const Project = () => {
         Projects{" "}
       </h1>
 
-      <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 justify-center gap-8  hover:scroll-smooth ">
+      <div className="grid  gap-4 grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3  justify-center lg:gap-9  hover:scroll-smooth ">
         {topThree.map((project, index) => (
           <motion.div
             key={project.id}
@@ -38,7 +38,7 @@ const Project = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
-            className="group relative w-[380px] h-[500px] rounded-xl overflow-hidden border border-neutral-800 bg-black/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-[0_0px_16px_#facc15]"
+            className="group relative md:w-[350px] h-[500px]  rounded-xl overflow-hidden border border-neutral-800 bg-black/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-[0_0px_16px_#facc15]"
           >
             <img
               src={project.image}

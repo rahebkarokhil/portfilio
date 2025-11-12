@@ -11,7 +11,7 @@ import Contact from "./Contact/Contact";
 const Home = () => {
   return (
     <>
-      <div className=":px-96 shadow-black shadow-xl">
+      <div className="bg-black shadow-black shadow-xl mx-auto w-au">
         <Hero />
         <About />
         <Skills />

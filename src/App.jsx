@@ -8,15 +8,16 @@ import SplashCursor from "./Compononts/MouseEffect/SplashCursor";
 
 const App = () => {
   return (
-    <Router>
-      <SplashCursor />
-      <Navebar />
-      <Routes>
-    
-        <Route path="/" element={<Home/>} />
-        <Route path="/projects" element={<Allproject/>} />
-      </Routes>
-    </Router>
+    <div className="">
+      <Router>
+        <SplashCursor />
+        <Navebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Allproject />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

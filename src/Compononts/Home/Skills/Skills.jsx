@@ -52,12 +52,12 @@ const icons = [
 function Skills() {
   return (
     <div className="bg-black py-10 sm:py-14">
-      <div className="px-4 sm:px-8 lg:px-20 max-w-[1400px] mx-auto">
+      <div className="px-4 sm:px-8 lg:px-20 max-w-[1400px] mx-auto flex flex-col justify-center items-center">
         <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-10">
           Skills
-        </h1>
+        </h1>  
 
-        <div className="flex flex-col gap-8 sm:gap-10 rounded-lg py-8 sm:py-10   border-zinc-900" >
+        <div className="flex flex-col gap-8 sm:gap-10 rounded-lg py-8 sm:py-10 w-[99%]   border-zinc-900" >
           {["left", "right", "left"].map((dir, index) => (
             <Marquee
               key={index}
@@ -67,7 +67,7 @@ function Skills() {
               pauseOnHover
               className="w-full"
             >
-              <div className="flex items-center gap-x-8 sm:gap-x-12 lg:gap-x-16 px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center gap-x-8 sm:gap-x-12  lg:gap-x-16 px-4 sm:px-6 lg:px-8">
                 {icons.map((item, i) => (
                   <span
                     key={i}

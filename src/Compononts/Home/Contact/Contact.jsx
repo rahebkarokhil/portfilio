@@ -38,19 +38,19 @@ function Contact() {
       viewport={{ once: true, amount: 0.2 }}
       className="bg-black py-12 sm:py-16"
     >
-      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[1200px]  sm:px-6 lg:px-8">
         <motion.h1
-          className="text-slate-400 font-poppins font-semibold mb-2 text-sm sm:text-base"
+          className="text-slate-400 font-poppins font-semibold mb-2 px-20 text-sm sm:text-base"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
           Contact
         </motion.h1>
-
+    
         <motion.h2
           className="font-bold font-poppins text-white leading-tight mb-8 sm:mb-12
-                     text-[clamp(28px,6vw,56px)] lg:text-[clamp(40px,5vw,72px)]"
+                     text-[clamp(28px,6vw,56px)] px-20   lg:text-[clamp(40px,5vw,72px)]"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -67,7 +67,7 @@ function Contact() {
           </motion.span>
         </motion.h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 font-poppins">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 px-5 md:px-20 lg:gap-12 xl:grid-cols-2 font-poppins">
   
           <motion.div
             initial={{ opacity: 0, y: 40 }}

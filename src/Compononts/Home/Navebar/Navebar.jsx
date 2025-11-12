@@ -13,13 +13,13 @@ function Navbar() {
         block: "start",
       
       });
-      setDropdown(false); // close mobile menu after clicking
+      setDropdown(false);
     }
   };
 
   return (
-    <div className="px-10">
-      <div className="fixed top-4 left-1/2 -translate-x-1/2 flex justify-between items-center border border-slate-700 h-14 sm:h-[70px] px-3 sm:px-4 shadow-inner shadow-slate-700 rounded-full bg-black/70 w-[98%] sm:w-[95%] lg:w-[96%] 2xl:w-[1400px] max-w-[1400px] z-50">
+    <div className="px-5 flex justify-center items-center w-full">
+      <div className="fixed top-4   flex justify-between items-center border border-slate-700 h-16  w-[87%] md:w[92%] px-3 sm:px-4 shadow-inner shadow-slate-700 rounded-full bg-black/70  z-50">
     
         <div>
           <Link to="/">

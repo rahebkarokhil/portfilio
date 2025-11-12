@@ -1,8 +1,15 @@
+import adi from '../../../assets/project/Adiplus.png'
+import Play from '../../../assets/project/play.png'
+import shoper from '../../../assets/project/shoper.png'
+import suntower  from '../../../assets/project/suntower.png'
+import Tailwind from '../../../assets/project/tailwind.png'
+
+
 export const projects = [
   {
     id: 1,
     title: "Shoper",
-    image: "public/Project/shoper.png",
+    image: shoper,
     github: "https://github.com/rahebkarokhil/ShoppereCommerce-Temlate-Byraheb",
     vercel: "https://shoppere-commerce-temlate-busniss.vercel.app/",
 
@@ -10,28 +17,28 @@ export const projects = [
   {
     id: 2,
     title: "Play",
-    image: "public/Project/play.png",
+    image: Play,
     github: "https://github.com/rahebkarokhil/portfolio",
     vercel: "https://portfolio.vercel.app",
   },
   {
     id: 3,
     title: "Suntower",
-    image: "public/Project/suntower.png",
+    image: suntower,
     github: "https://github.com/rahebkarokhil/Suntower",
     vercel: "https://suntower-rtua.vercel.app/",
   },
   {
     id: 4,
     title: "Adi-Plus medical Complix",
-    image: "public/Project/Adiplus.png",
+    image:adi,
     github: "https://github.com/rahebkarokhil/adi-medical",
     vercel: "https://adi-medical.vercel.app",
   },
   {
     id: 5,
     title: "Tailwind CSS",
-    image: "public/Project/tailwind.png",
+    image: Tailwind,
     github: "https://github.com/rahebkarokhil/portfolio1",
     vercel: "https://portfolio1.vercel.app",
   },
