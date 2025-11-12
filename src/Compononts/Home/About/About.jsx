@@ -1,0 +1,87 @@
+
+
+
+import React from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import rahebImg from "/About/raheb p.jpg"; // put the image in /public/About/rahebb.png
+
+function About() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  return (
+    <section id="about" className="bg-black py-12 sm:py-16">
+      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-center">
+          <div className="rounded-2xl bg-black text-white shadow-inner border border-slate-700 shadow-slate-700 px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+            <h1 className="text-yellow-600 font-bold font-poppins text-3xl sm:text-4xl mb-4 sm:mb-5 lg:mt-6">
+              About Me
+            </h1>
+
+            <p className="font-poppins font-thin text-sm sm:text-base leading-relaxed text-zinc-200">
+              I am a skilled Full-Stack Web Developer specializing in the MERN
+              stack (MongoDB, Express.js, React.js, Node.js), with hands-on
+              experience building responsive, scalable, and user-friendly web
+              applications. I focus on clean architectural design, secure and
+              efficient backend systems, and intuitive frontend interfaces. My
+              expertise includes developing Single Page Applications (SPAs),
+              RESTful APIs, user authentication, real-time features using
+              WebSockets, and advanced MongoDB aggregation pipelines. I leverage
+              Tailwind CSS to craft modern, responsive UI components and adhere
+              to best practices such as the MVC pattern, modular code structure,
+              and Git version control.
+            </p>
+
+            {/* Counters */}
+            <div
+              ref={ref}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8"
+            >
+              <div className="text-center text-2xl shadow-inner shadow-slate-700 rounded-xl p-5 flex flex-col justify-center items-center bg-black transition duration-300 border border-slate-700/60">
+                <h2 className="text-yellow-600 font-bold mb-1">Projects</h2>
+                {inView && (
+                  <span className="text-white text-3xl font-semibold">
+                    <CountUp start={0} end={20} duration={2} />+
+                  </span>
+                )}
+              </div>
+
+              <div className="text-center text-2xl shadow-inner shadow-slate-700 rounded-xl p-5 flex flex-col justify-center items-center bg-black transition duration-300 border border-slate-700/60">
+                <h2 className="text-yellow-600 font-bold mb-1">
+                  Years of Experience
+                </h2>
+                {inView && (
+                  <span className="text-white text-3xl font-bold">
+                    <CountUp start={0} end={2} duration={2} />+
+                  </span>
+                )}
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <button className="bg-black text-white text-base sm:text-lg font-bold px-5 py-2 mt-8 shadow-inner shadow-slate-700 rounded-lg border border-slate-700 hover:shadow-white/20 transition">
+                <a href="#contact"> Contact</a>
+              </button>
+            </div>
+          </div>
+
+          {/* Right: Image */}
+          <div className="w-full md:h-[560px] lg:h-[690px] rounded-2xl overflow-hidden shadow-inner border border-slate-700 shadow-slate-700 bg-black">
+            <img
+              src={rahebImg}
+              alt="Raheb portrait"
+              className="w-[100%] h-auto  object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default About;
