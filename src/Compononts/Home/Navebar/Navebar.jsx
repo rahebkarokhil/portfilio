@@ -74,12 +74,12 @@ function Navbar() {
             {Dropdown ? "Close" : "Menu"}
           </span>
 
-          <div  
+          <div
             className={`fixed transition-all duration-500 ease-in-out ${
               Dropdown
                 ? "opacity-100 scale-100"
                 : "opacity-0 scale-95 pointer-events-none"
-            } top-20 right-12 left-12   bg-white text-white text-center rounded-lg shadow-md p-4 z-40`}
+            } top-20 right-12 left-12   bg-black/5 text-white text-center rounded-lg shadow-md p-4 z-40`}
           >
             <ul className="space-y-4 font-semibold">
               <li className="hover:text-yellow-600 transition duration-300">
