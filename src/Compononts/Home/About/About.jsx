@@ -15,7 +15,7 @@ function About() {
   return (
     <section id="about" className="bg-black py-12 sm:py-16">
       <div className="mx-auto w-full max-w-[1200px]   ">
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center px-44 lg:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center px-3 lg:px-10">
           <div className="rounded-2xl bg-black text-white shadow-inner border border-slate-700 shadow-slate-700 px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
             <h1 className="text-yellow-600 font-bold font-poppins text-3xl sm:text-4xl mb-4 sm:mb-5 lg:mt-6">
               About Me
