@@ -14,7 +14,7 @@ function Contact() {
       .sendForm(
         "raheb123",
         "template_ynyre95", 
-        form.current, //\
+        form.current, 
         "xvO0R3IjgrZbS9pC3" 
       )
       .then(
@@ -38,9 +38,9 @@ function Contact() {
       viewport={{ once: true, amount: 0.2 }}
       className="bg-black py-12 sm:py-16"
     >
-      <div className="mx-auto w-full max-w-[1200px]  sm:px-6 lg:px-8">
+      <div className="mx-auto w-full   sm:px-6 lg:px-8">
         <motion.h1
-          className="text-slate-400 font-poppins font-semibold mb-2 px-20 text-sm sm:text-base"
+          className="text-slate-400 font-poppins font-semibold mb-2 px-20 xl:px10 text-sm sm:text-base"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -74,7 +74,7 @@ function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <p className="text-white/90 text-base sm:text-lg leading-relaxed">
+            <p className="text-white/90 text-base sm:text-lg leading-relaxed xl:mt-20">
               Describe your challenges and needs. Within 24 hours I will contact
               you to book a call and plan the entire strategy together on how to
               start improving your app or website. <br />
