@@ -36,11 +36,11 @@ function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="bg-black py-12 sm:py-16"
+      className="bg-black py-12 sm:py-16  "
     >
       <div className="mx-auto w-full   sm:px-6 lg:px-8">
         <motion.h1
-          className="text-slate-400 font-poppins font-semibold mb-2 px-20 xl:px10 text-sm sm:text-base"
+          className="text-slate-400 font-poppins font-semibold mb- px-4 xl:px10 text-sm sm:text-base"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -50,7 +50,7 @@ function Contact() {
     
         <motion.h2
           className="font-bold font-poppins text-white leading-tight mb-8 sm:mb-12
-                     text-[clamp(28px,6vw,56px)] px-20   lg:text-[clamp(40px,5vw,72px)]"
+                     text-[clamp(40px,6vw,56px)] px-4   lg:text-[clamp(40px,5vw,72px)]"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -60,8 +60,8 @@ function Contact() {
             initial={{ scale: 0 }}
             animate={{ scale: [1, 1.5, 1] }}
             transition={{ repeat: Infinity, duration: 1.2, delay: 1 }}
-            className="relative inline-block align-baseline text-yellow-600 font-bold ml-1
-                       text-[clamp(20px,5vw,40px)] lg:text-[clamp(28px,4vw,56px)]"
+            className="relative inline-block align-baseline bottom-16 lg:bottom-8  md:ml-1 md:-top-3 text-yellow-600 lg: font-bold ml-24
+                       text-[clamp(40px,5vw,40px)] lg:text-[clamp(28px,4vw,56px)]"
           >
             +
           </motion.span>

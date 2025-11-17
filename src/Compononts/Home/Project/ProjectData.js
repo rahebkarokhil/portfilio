@@ -1,9 +1,8 @@
-import adi from '../../../assets/project/Adiplus.png'
-import Play from '../../../assets/project/play.png'
-import shoper from '../../../assets/project/shoper.png'
-import suntower  from '../../../assets/project/suntower.png'
-import Tailwind from '../../../assets/project/tailwind.png'
-
+import adi from '../../../assets/project/Adiplus-min.png'
+import Play from '../../../assets/project/play-min.png'
+import shoper from '../../../assets/project/shoper-min.png'
+import suntower from '../../../assets/project/suntower-min.png'
+import Tailwind from '../../../assets/project/tailwind-min.png'
 
 export const projects = [
   {
@@ -12,7 +11,6 @@ export const projects = [
     image: shoper,
     github: "https://github.com/rahebkarokhil/ShoppereCommerce-Temlate-Byraheb",
     vercel: "https://shoppere-commerce-temlate-busniss.vercel.app/",
-
   },
   {
     id: 2,
@@ -31,7 +29,7 @@ export const projects = [
   {
     id: 4,
     title: "Adi-Plus medical Complix",
-    image:adi,
+    image: adi,
     github: "https://github.com/rahebkarokhil/adi-medical",
     vercel: "https://adi-medical.vercel.app",
   },
@@ -45,42 +43,42 @@ export const projects = [
   {
     id: 6,
     title: "Portfolio 2",
-    image: "public/Demo/7946bd215836435.67754c6270bad.jpg",
+    image: "/Demo/7946bd215836435.67754c6270bad.jpg",
     github: "https://github.com/rahebkarokhil/portfolio2",
     vercel: "https://portfolio2.vercel.app",
   },
   {
     id: 7,
     title: "Portfolio 3",
-    image: "../public/Demo/888794166692497.641c62c108d8c (1).jpg",
+    image: "/Demo/888794166692497.641c62c108d8c-1.jpg",
     github: "https://github.com/rahebkarokhil/portfolio3",
     vercel: "https://portfolio3.vercel.app",
   },
   {
     id: 8,
     title: "Portfolio 4",
-    image: "/public/Demo/b27fe3153262673.632c59ad439a8 (1).jpg",
+    image: "/Demo/b27fe3153262673.632c59ad439a8-1.jpg",
     github: "https://github.com/rahebkarokhil/portfolio4",
     vercel: "https://portfolio4.vercel.app",
   },
   {
     id: 9,
     title: "Portfolio 5",
-    image: "../public/Demo/c66e97190910979.65c28392cbf24.jpg",
+    image: "/Demo/c66e97190910979.65c28392cbf24.jpg",
     github: "https://github.com/rahebkarokhil/portfolio5",
     vercel: "https://portfolio5.vercel.app",
   },
   {
     id: 10,
     title: "Portfolio 6",
-    image: "../public/Demo/d08ab2181515409.651d59b243be0.jpg",
+    image: "/Demo/d08ab2181515409.651d59b243be0.jpg",
     github: "https://github.com/rahebkarokhil/portfolio6",
     vercel: "https://portfolio6.vercel.app",
   },
   {
     id: 11,
     title: "Portfolio 7",
-    image: "../public/Demo/d476e3168046461.643410e10beac.jpg",
+    image: "/Demo/d476e3168046461.643410e10beac.jpg",
     github: "https://github.com/rahebkarokhil/portfolio7",
     vercel: "https://portfolio7.vercel.app",
   },

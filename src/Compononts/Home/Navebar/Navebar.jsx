@@ -18,9 +18,8 @@ function Navbar() {
   };
 
   return (
-    <div className="px-5 flex justify-center items-center w-full">
-      <div className="fixed top-4   flex justify-between items-center border border-slate-700 h-16  w-[87%] md:w[92%] px-3 sm:px-4 shadow-inner shadow-slate-700 rounded-full bg-black/70  z-50">
-    
+    <div className="  px-5 flex justify-center items-center ">
+      <div className=" container mx-auto  fixed top-4   flex justify-between items-center border border-slate-700 h-16  w-[87%] md:w[92%] px-3 sm:px-4 shadow-inner shadow-slate-700 rounded-full bg-black/70  z-50">
         <div>
           <Link to="/">
             <img
@@ -31,7 +30,6 @@ function Navbar() {
           </Link>
         </div>
 
-     
         <ul className="hidden md:flex gap-11 text-white font-bold font-poppins">
           <li className="hover:text-yellow-600 transition ease-out duration-1000 cursor-pointer">
             <a href="#home" onClick={(e) => handleScroll(e, "#Home")}>
@@ -65,7 +63,6 @@ function Navbar() {
           </a>
         </span>
 
-       
         <div className="relative md:hidden">
           <span
             className="border w-28 h-11 font-bold flex justify-center items-center text-white rounded-full cursor-pointer bg-black"
@@ -79,7 +76,7 @@ function Navbar() {
               Dropdown
                 ? "opacity-100 scale-100"
                 : "opacity-0 scale-95 pointer-events-none"
-            } top-20 right-12 left-12   bg-black/5 text-white text-center rounded-lg shadow-md p-4 z-40`}
+            } top-20 right-12 left-12   bg-black/50 text-white text-center rounded-lg shadow-md p-4 z-40`}
           >
             <ul className="space-y-4 font-semibold">
               <li className="hover:text-yellow-600 transition duration-300">
