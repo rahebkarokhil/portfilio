@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { BackgroundLines } from "./background-lines";
 
+
 function Hero() {
   return (
     <div className="relative w-full min-h-[100svh]m bg-black overflow-hidden">
       {/* BG */}
       <div className="absolute inset-0 z-0">
         <BackgroundLines />
+        
       </div>
 
       {/* Content */}

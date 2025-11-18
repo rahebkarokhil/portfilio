@@ -1,16 +1,16 @@
-import React, { useEffect } from "react"; // 👈 import useEffect
+import React, { useEffect } from "react";
 import { projects } from "./ProjectData";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { Link } from "react-router-dom"; // ✅ Add this
+import { Link } from "react-router-dom";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i) => ({
-    opacity: 7,
+    opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1,
+      delay: i * 0.2,
       duration: 0.6,
       ease: [0.25, 1, 0.5, 1],
     },
@@ -18,18 +18,17 @@ const fadeInUp = {
 };
 
 const AllProjects = () => {
-  
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
 
   return (
-    <div className="bg-black min-h-screen py-32 px-4 flex flex-col items-center justify-center">
+    <div className="bg-black min-h-screen py-32 px-4 flex flex-col items-center">
       <h1 className="text-4xl text-yellow-400 font-bold mb-12 text-center">
         All Projects
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-10 w-full max-w-7xl">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-center lg:gap-9">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
@@ -37,17 +36,23 @@ const AllProjects = () => {
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.6 }}
-            className="group relative w-[380px] h-[500px] rounded-xl overflow-hidden border border-neutral-800 bg-black/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-[0_0px_16px_#facc15]"
+            viewport={{ once: true, amount: 0.2 }}
+            className="group relative w-full md:w-[350px] h-[500px] rounded-xl overflow-hidden border border-neutral-800 bg-black/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-[0_0px_16px_#facc15]"
           >
-            <img
+            <motion.img
               src={project.image}
               alt={project.title}
-              className="transform transition-transform duration-1000 group-hover:-translate-y-[800px]"
+              className="w-full h-auto object-cover"
+              initial={{ y: 0 }}
+              whileHover={{ y: "-60%" }}
+              transition={{
+                duration: 5.9,
+                ease: [0.25, 1, 0.5, 1],
+              }}
             />
 
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
-              <div className="flex gap-6">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none">
+              <div className="flex gap-6 pointer-events-auto">
                 <a
                   href={project.github}
                   target="_blank"

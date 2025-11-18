@@ -1,4 +1,4 @@
-// 
+
 
 
 
@@ -71,7 +71,7 @@ function Skills() {
                 {icons.map((item, i) => (
                   <span
                     key={i}
-                    className="px-2 sm:px-3 py-2 sm:py-3 shadow-inner shadow-slate-950 rounded-md"
+                    className="px-2 sm:px-3 py-2 sm:py-3 shadow-inner shadow-slate-900 rounded-md"
                   >
                     {item.icon}
                   </span>

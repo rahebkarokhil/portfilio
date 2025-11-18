@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/logo/rk.jpg";
 
 function Navbar() {
   const [Dropdown, setDropdown] = useState(false);
@@ -11,20 +12,19 @@ function Navbar() {
       target.scrollIntoView({
         behavior: "smooth",
         block: "start",
-      
       });
       setDropdown(false);
     }
   };
 
   return (
-    <div className="  px-5 flex justify-center items-center ">
-      <div className=" container mx-auto  fixed top-4   flex justify-between items-center border border-slate-700 h-16  w-[87%] md:w[92%] px-3 sm:px-4 shadow-inner shadow-slate-700 rounded-full bg-black/70  z-50">
-        <div>
+    <div className="  flex justify-center items-center ">
+      <div className=" container mx-auto  fixed top-4   flex justify-between items-center border border-slate-700 h-16  w-[92%] md:w[92%] px-3 sm:px-4 shadow-inner shadow-slate-700 rounded-full bg-black/70  z-50">
+        <div className="">
           <Link to="/">
             <img
-              className="w-12 h-12 rounded-full"
-              src="/logo/raheb2.png"
+              className="w-12  h-12  border border-gray-700  rounded-full"
+              src={logo}
               alt="Logo"
             />
           </Link>

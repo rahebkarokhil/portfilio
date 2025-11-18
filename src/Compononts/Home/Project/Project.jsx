@@ -7,7 +7,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i) => ({
-    opacity: 1,
+    opacity: 30,
     y: 0,
     transition: {
       delay: i * 0.2,
@@ -25,11 +25,11 @@ const Project = () => {
       id="project"
       className="bg-black min-h-screen flex flex-col items-center justify-center py-16 px-4"
     >
-      <h1 className="text-center text-3xl text-yellow-600 font-poppins  font-bold mb-10">
-        Projects{" "}
+      <h1 className="text-center text-3xl text-yellow-600 font-poppins font-bold mb-10">
+        Projects
       </h1>
 
-      <div className="grid  gap-4 grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3  justify-center lg:gap-9  hover:scroll-smooth ">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-center lg:gap-9">
         {topThree.map((project, index) => (
           <motion.div
             key={project.id}
@@ -38,9 +38,10 @@ const Project = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
-            className="group relative md:w-[350px] h-[500px]  rounded-xl overflow-hidden border border-neutral-800 bg-black/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-[0_0px_16px_#facc15]"
+            whileHover="hover"
+            className="group relative md:w-[350px] h-[500px] rounded-xl overflow-hidden border border-neutral-800 bg-black/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-[0_0px_16px_#facc15]"
           >
-            <img
+            <motion.img
               src={project.image}
               alt={project.title}
               className="w-full h-auto] object-cover"
@@ -62,6 +63,7 @@ const Project = () => {
                 >
                   <FaGithub />
                 </a>
+
                 <a
                   href={project.vercel}
                   target="_blank"

@@ -1,16 +1,13 @@
-
-
-
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import rahebImg from "/About/raheb p.jpg"; 
+import rahebImg from "/About/raheb p.jpg";
 
 function About() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
-  }); 
+  });
 
   return (
     <section id="about" className="bg-black py-12 sm:py-16">
