@@ -43,11 +43,17 @@ const Project = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="  transform transition-transform duration-1000 group-hover:-translate-y-[800px]"
+              className="w-full h-auto] object-cover"
+              initial={{ y: 0 }}
+              whileHover={{ y: "-60%" }}
+              transition={{
+                duration: 5.9,
+                ease: [0.25, 1, 0.5, 1],
+              }}
             />
 
-            <div className="absolute inset-0 flex items-center justify-center  opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
-              <div className="flex gap-6">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none">
+              <div className="flex gap-6 pointer-events-auto">
                 <a
                   href={project.github}
                   target="_blank"
