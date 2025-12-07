@@ -1,10 +1,17 @@
-import React, { useRef } from "react";
-import { motion } from "framer-motion";
+
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Icons from "./Icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./conact.css";
 
 function Contact() {
   const form = useRef();
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true }); // initialize AOS
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,50 +36,28 @@ function Contact() {
   };
 
   return (
-    <motion.section
-      id="contact"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
-      className="bg-black py-12 sm:py-16"
-    >
+    <section id="contact" className="bg-black py-12 sm:py-16">
       <div className="max-w-[1350px] mx-auto w-full px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.h1
+        <h1
+          data-aos="fade-right"
           className="text-yellow-600 font-poppins font-semibold mb-2 text-sm sm:text-base"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
         >
           Contact
-        </motion.h1>
+        </h1>
 
-        <motion.h2
+        <h2
+          data-aos="fade-left"
           className="font-bold font-poppins text-white leading-tight mb-8 sm:mb-12 text-[clamp(32px,5vw,56px)] lg:text-[clamp(40px,5vw,72px)]"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
         >
           Level Up your business
-          <motion.span
-            initial={{ scale: 0 }}
-            animate={{ scale: [1, 1.5, 1] }}
-            transition={{ repeat: Infinity, duration: 1.2, delay: 1 }}
-            className="relative inline-block bottom-0 lg:bottom-2 ml-1 text-yellow-600 font-bold text-[clamp(28px,5vw,36px)] lg:text-[clamp(28px,4vw,56px)]"
-          >
-            +
-          </motion.span>
-        </motion.h2>
+          <span className="plus-icon ml-1">+</span>
+        </h2>
 
         {/* Grid: Info + Form */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 px-0 sm:px-4 md:px-6 lg:gap-12 font-poppins">
           {/* Left: Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
+          <div data-aos="fade-up">
             <p className="text-white/90 text-base sm:text-lg leading-relaxed xl:mt-8">
               Describe your challenges and needs. Within 24 hours, I will
               contact you to plan the strategy on how to improve your app or
@@ -86,16 +71,15 @@ function Contact() {
             <div className="mt-6 sm:mt-8">
               <Icons />
             </div>
-          </motion.div>
+          </div>
 
           {/* Right: Form */}
-          <motion.form
+          <form
             ref={form}
             onSubmit={sendEmail}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-            className="flex flex-col space-y-5 sm:space-y-6 w-full max-w-full lg:max-w-none"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="flex flex-col space-y-4 sm:space-y-6 w-full max-w-md sm:mx-auto px-4 container mx-auto"
           >
             {/* Name */}
             <div className="flex flex-col">
@@ -107,12 +91,12 @@ function Contact() {
               </label>
               <input
                 id="user_name"
-                className="h-11 px-4 bg-slate-800 rounded-lg text-white w-full
-                           focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 type="text"
                 name="user_name"
                 placeholder="What's your name?"
                 required
+                className="h-10 sm:h-11 px-4 bg-slate-800 rounded-lg text-white w-full
+                 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               />
             </div>
 
@@ -126,12 +110,12 @@ function Contact() {
               </label>
               <input
                 id="user_email"
-                className="h-11 px-4 bg-slate-800 rounded-lg text-white w-full
-                           focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 type="email"
                 name="user_email"
                 placeholder="example@gmail.com"
                 required
+                className="h-10 sm:h-11 px-4 bg-slate-800 rounded-lg text-white w-full
+                 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               />
             </div>
 
@@ -145,11 +129,11 @@ function Contact() {
               </label>
               <textarea
                 id="message"
-                className="h-40 p-4 bg-slate-800 rounded-lg text-white resize-none w-full
-                           focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 name="message"
                 placeholder="Your message..."
                 required
+                className="h-36 sm:h-40 p-4 bg-slate-800 rounded-lg text-white resize-none w-full
+                 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               />
             </div>
 
@@ -157,14 +141,14 @@ function Contact() {
             <button
               type="submit"
               className="border border-slate-700 shadow-inner shadow-slate-700 text-white py-3 px-6 rounded-lg font-semibold
-                         hover:bg-white/5 hover:text-amber-400 transition w-full sm:w-auto"
+               hover:bg-white/5 hover:text-amber-400 transition w-full sm:w-auto text-center pulse-button"
             >
               Submit
             </button>
-          </motion.form>
+          </form>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

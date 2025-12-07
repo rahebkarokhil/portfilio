@@ -1,9 +1,7 @@
- 
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { BackgroundLines } from "./background-lines";
-
 
 function Hero() {
   return (
@@ -11,11 +9,13 @@ function Hero() {
       {/* BG */}
       <div className="absolute inset-0 z-0">
         <BackgroundLines />
-        
       </div>
 
       {/* Content */}
-      <div id="Home" className="relative z-10 flex flex-col justify-center min-h-[100svh] w-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
+      <div
+        id="Home"
+        className="relative z-10 flex flex-col justify-center min-h-[100svh] w-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20"
+      >
         <div className="mx-auto w-full max-w-[1200px] text-white">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
@@ -47,7 +47,7 @@ function Hero() {
             KAROKHIL
             <motion.span
               initial={{ scale: 0 }}
-              animate={{ scale: [1, 1.5,  1] }}
+              animate={{ scale: [1, 1.5, 1] }}
               transition={{ repeat: Infinity, duration: 1.2, delay: 1 }}
               className="text-yellow-600 font-bold text-5xl bottom-9 md:text-7xl md:bottom-16 md:right- right-10 lg:text-7xl relative lg:bottom-14 lg:right inline-block"
             >
@@ -84,4 +84,3 @@ function Hero() {
 }
 
 export default Hero;
-
