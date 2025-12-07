@@ -22,7 +22,7 @@ function Hero() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             className="font-semibold font-poppins leading-tight break-words
-                       text-[clamp(60px,8vw,72px)] md:text-[clamp(48px,6vw,96px)]"
+                       text-[clamp(60px,8vw,72px)] md:text-[clamp(100px,6vw,96px)]"
           >
             I'M
           </motion.h1>
@@ -32,7 +32,7 @@ function Hero() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-semibold font-poppins text-yellow-600 leading-tight break-words
-                       text-[clamp(60px,8vw,72px)] md:text-[clamp(48px,6vw,96px)]"
+                       text-[clamp(60px,8vw,72px)] md:text-[clamp(100px,6vw,96px)]"
           >
             RAHEB
           </motion.h1>
@@ -42,14 +42,14 @@ function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative font-semibold font-poppins leading-tight break-words inline-flex items-baseline gap-2
-                       text-[clamp(60px,8vw,72px)] md:text-[clamp(48px,6vw,96px)]"
+                       text-[clamp(60px,8vw,72px)] md:text-[clamp(100px,6vw,96px)]"
           >
             KAROKHIL
             <motion.span
               initial={{ scale: 0 }}
               animate={{ scale: [1, 1.5,  1] }}
               transition={{ repeat: Infinity, duration: 1.2, delay: 1 }}
-              className="text-yellow-600 font-bold text-6l bottom-9 md:text-6xl md:bottom-11 md:right-9 right-10 lg:text-7xl relative lg:bottom-14 lg:right inline-block"
+              className="text-yellow-600 font-bold text-5xl bottom-9 md:text-7xl md:bottom-16 md:right- right-10 lg:text-7xl relative lg:bottom-14 lg:right inline-block"
             >
               +
             </motion.span>

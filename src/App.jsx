@@ -8,7 +8,7 @@ import SplashCursor from "./Compononts/MouseEffect/SplashCursor";
 
 const App = () => {
   return (
-    <div className="container mx-auto bg-black font-poppins">
+    <div className="bg-black  font-poppins">
       <SplashCursor />
       <Router>
         <Navebar />

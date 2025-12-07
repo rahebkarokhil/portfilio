@@ -16,8 +16,8 @@ export const projects = [
     id: 2,
     title: "Play",
     image: Play,
-    github: "https://github.com/rahebkarokhil/portfolio",
-    vercel: "https://portfolio.vercel.app",
+    github: "https://github.com/rahebkarokhil/Play",
+    vercel: "play-six-sage.vercel.app",
   },
   {
     id: 3,
@@ -40,6 +40,7 @@ export const projects = [
     github: "https://github.com/rahebkarokhil/portfolio1",
     vercel: "https://portfolio1.vercel.app",
   },
+  
   
     
 ];
