@@ -59,7 +59,7 @@ const Project = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-3xl hover:text-yellow-400 transition"
+                  className="text-black text-5xl hover:text-yellow-400 transition"
                 >
                   <FaGithub />
                 </a>
@@ -68,7 +68,7 @@ const Project = () => {
                   href={project.vercel}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-3xl hover:text-yellow-400 transition"
+                  className="text-black text-5xl hover:text-yellow-400 transition"
                 >
                   <FaExternalLinkAlt />
                 </a>

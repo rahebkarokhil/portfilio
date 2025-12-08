@@ -1,11 +1,9 @@
-
 import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Icons from "./Icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./conact.css";
-
+import "./conact.css"; 
 function Contact() {
   const form = useRef();
 
