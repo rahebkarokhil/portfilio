@@ -22,7 +22,7 @@ const float = (duration) => ({
 
 function Hero() {
   return (
-    <div className="relative w-full min-h-[100svh] bg-black overflow-hidden">
+    <div className="relative w-full min-h-[100svh] bg-black overflow-hidden container mx-auto">
       {/* BACKGROUND LINES */}
       <div className="absolute inset-0 z-0">
         <BackgroundLines />

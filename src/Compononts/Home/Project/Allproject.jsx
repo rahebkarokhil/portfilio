@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i) => ({
@@ -23,7 +24,23 @@ const AllProjects = () => {
   }, []);
 
   return (
-    <div className="bg-black min-h-screen py-32 px-4 flex flex-col items-center">
+   
+<div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <Beams
+    beamWidth={2}
+    beamHeight={15}
+    beamNumber={12}
+    lightColor="#ffffff"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={0}
+  />
+
+
+
+
+   <div className="bg-black min-h-screen py-32 px-4 flex flex-col items-center">
       <h1 className="text-4xl text-yellow-400 font-bold mb-12 text-center">
         All Projects
       </h1>
@@ -113,6 +130,7 @@ const AllProjects = () => {
         </Link>
       </motion.div>
     </div>
+</div>
   );
 };
 

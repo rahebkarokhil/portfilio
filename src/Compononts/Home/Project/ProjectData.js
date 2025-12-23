@@ -24,7 +24,7 @@ export const projects = [
     title: "Suntower",
     image: suntower,
     github: "https://github.com/rahebkarokhil/Suntower",
-    vercel: "https://suntower-rtua.vercel.app/",
+    vercel: "https://suntowr05.vercel.app/",
   },
   {
     id: 4,
