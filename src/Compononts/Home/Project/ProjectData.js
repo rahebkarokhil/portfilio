@@ -17,7 +17,7 @@ export const projects = [
     title: "Play",
     image: Play,
     github: "https://github.com/rahebkarokhil/Play",
-    vercel: "play-six-sage.vercel.app",
+    vercel: "https://play-six-sage.vercel.app/",
   },
   {
     id: 3,
@@ -31,14 +31,14 @@ export const projects = [
     title: "Adi-Plus medical Complix",
     image: adi,
     github: "https://github.com/rahebkarokhil/adi-medical",
-    vercel: "https://adi-medical.vercel.app",
+    vercel: "https://adi-plus-medical-complix.vercel.app",
   },
   {
     id: 5,
     title: "Tailwind CSS",
     image: Tailwind,
-    github: "https://github.com/rahebkarokhil/portfolio1",
-    vercel: "https://portfolio1.vercel.app",
+    github: "https://github.com/rahebkarokhil/Tailwind-Css",
+    vercel: "https://tailwind-css-seven-lime.vercel.app",
   },
   
   
